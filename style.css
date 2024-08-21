@@ -1,0 +1,112 @@
+body {
+    background-color: rgba(0, 0, 0, 0.589);
+}
+
+
+.card {
+    background-color: #1c1c1c;
+    width: 400px;
+    height: 175px;
+    padding: 52px;
+    position: relative;
+    border-radius: 23px;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.678);
+}
+
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.glow-border {
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    border-radius: 26px; /* Увеличен радиус, чтобы учесть увеличение границы */
+    background: linear-gradient(to left, rgb(233, 226, 226), #b4a4a4 50%, #727c7c 75%, #000 75%);
+    background-size: 400% 400%;
+    z-index: -1;
+    animation: animate-border 8s linear infinite;
+}
+
+@keyframes animate-border {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.circle {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.circle1 {
+    width: 100px;
+    height: 100px;
+    top: -5px;
+    left: -5px;
+}
+
+.circle2 {
+    width: 100px;
+    height: 100px;
+    bottom: -5px;
+    right: -5px;
+}
+.circle3 {
+    width: 50px;
+    height: 50px;
+    top: 180px;
+    left: 0 auto;
+}
+
+.circle4 {
+    width: 50px;
+    height: 50px;
+    bottom: 0 auto;
+    right: 55px;
+}
+.circle5 {
+    width: 50px;
+    height: 50px;
+    bottom: 60px;
+    right: 190px;
+}
+.circle6 {
+    width: 50px;
+    height: 50px;
+    top: 60px;
+    left: 190px;
+}
+.circle7 {
+    width: 50px;
+    height: 50px;
+    bottom: 100px;
+    right: 250px;
+}
+.circle8 {
+    width: 50px;
+    height: 50px;
+    top: 100px;
+    left: 250px;
+}
+.circle9 {
+    width: 50px;
+    height: 50px;
+    bottom: 10px;
+    right: 140px;
+}
+.circle10 {
+    width: 50px;
+    height: 50px;
+    top: 10px;
+    left: 140px;
+}
